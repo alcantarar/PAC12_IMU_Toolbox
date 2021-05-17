@@ -11,4 +11,4 @@ Final specifications should be 80 x 60 x 6 mm, but we've printed it at
 Implementation of the sacral clip (note, IMeasureU Blue Thunder IMU is 
 oriented so that  +y is pointed superiorly):
 
-![](https://dfzljdn9uc3pi.cloudfront.net/2021/11199/1/FigureS1.png)
+<img src="https://dfzljdn9uc3pi.cloudfront.net/2021/11199/1/FigureS1.png" width="400">
