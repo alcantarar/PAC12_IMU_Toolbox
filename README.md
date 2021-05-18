@@ -94,14 +94,14 @@ The `Baseline_Processing.m` script isn't very smart. It may get mixed up if ther
 located in the directory structure above. Our study was longitudinal, so there were multiple collections for each 
 subject ID. 
 
-## 3. Running `Baseline_Preprocessing.m`
-Combines IMU csv files and GRF ASCII file into single MATLAB structure. Likely requires modification based on your
-lab's motion capture software and force-measuring equipment. Inspect `Preprocessing/support_fxns/import_baseline_data.m`
-and `Preprocessing/support_fxns/importforces.m` for examples on how to import GRF data that is in different formats. 
+## 3. Processing IMU and GRF data
+Next, we aim to combine IMU csv files and GRF ASCII file into single MATLAB structure. The scripts we used likely require
+modification based on your lab's motion capture software and force-measuring equipment. View `Preprocessing/README.md` 
+for information about the script to run and how to modify it for your particular use case. If you get stuck, open an issue
+and ask for help!
 
-Baseline Preprocessing README goes here
+## 4. Synchronizing IMU and GRF data
+We developed a standalone MATLAB-based application for Windows that temporally synchronizes IMU and GRF data: InSink. 
+View `InSink/README.md` for more information on how to use the application. If you run into bugs, open an issue! 
 
-## 4. InSink Application
-InSink is a standalone MATLAB-based application for Windows that temporally synchronizes IMU and GRF data. 
 
-InSink README goes here

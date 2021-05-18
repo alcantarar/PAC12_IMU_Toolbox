@@ -1,4 +1,4 @@
-# Preprocessing 
+# Preprocessing
 This script reads in IMU and GRF data to combine it into a single Matlab structure. No filtering or trimming of files 
 is performed. It provides a uniform file structure for future processing and analysis steps following data collection
 at multiple universities. 
@@ -6,8 +6,10 @@ at multiple universities.
 Each university had a preferred method of exporting GRF data from their motion capture software, and this script
 handles these differences. For example, Colorado uses Vicon Nexus and a Treadmetrix treadmill that exports GRF data
 as a *.CSV file while Oregon uses Motion Analysis Cortex and a Bertec treadmill that exports GRF data as an *.ANC file.
+Inspect `support_fxns/import_baseline_data.m` and `support_fxns/importforces.m` for information on how we handled importing
+GRF data from different sources. Your particular use case may require modification of these functions. 
 
-### Each data collection session will have one matlab structure called `data` with the following hierarchy:
+Each data collection session will have one Matlab variable (structure) called `data` with the following contents:
 - `colDate` (double; format: YYMMDD; date of data collection)
 - ``force`` (nx3; **raw & untrimmed** forces (N) from treadmill [X,Y,Z]:  
            +X = runner’s right,  
