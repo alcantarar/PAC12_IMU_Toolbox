@@ -99,7 +99,7 @@ Combines IMU csv files and GRF ASCII file into single MATLAB structure. Likely r
 lab's motion capture software and force-measuring equipment. Inspect `Preprocessing/support_fxns/import_baseline_data.m`
 and `Preprocessing/support_fxns/importforces.m` for examples on how to import GRF data that is in different formats. 
 
-[Baseline Preprocessing README]('/Preprocessing/README.md')
+Baseline Preprocessing README goes here
 
 ## 4. InSink Application
 InSink is a standalone MATLAB-based application for Windows that temporally synchronizes IMU and GRF data. 
