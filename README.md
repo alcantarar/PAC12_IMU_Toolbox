@@ -1,6 +1,17 @@
 # PAC12_IMU_Toolbox
 Repository contains materials for use of IMeasureU inertial measurement units for biomechanics research. 
-These materials were developed as a part of a research study funded by the PAC-12 Student Health and Well-being Grant Program.
+These materials were developed as a part of a research study funded by the PAC-12 Student Health and Well-being Grant 
+Program and a collaboration between the University of Colorado, University of Oregon, Stanford University, and University
+of Southern California. 
+
+This repository contains code and materials generated during this collaboration and is maintained by Ryan Alcantara. 
+Please open an issue if you have a particular inquiry or need help adapting this approach for your study. The following
+publications have implemented aspects of this toolbox:
+
+- ["Sacral acceleration can predict whole-body kinetics and stride kinematics across running speeds"](https://peerj.com/articles/11199/)
+ by Alcantara et al. (2021)
+- ["Low-pass filter cutoff frequency affects sacral-mounted inertial measurement unit estimations of peak vertical ground
+reaction forces and contact time during treadmill running"](https://doi.org/10.1016/j.jbiomech.2021.110323) by Day et al. (2021)
 
 # Order of Operations
 
@@ -22,7 +33,7 @@ in temporal synchronization between IMUs. We implemented a 2-step approach to sy
 IMUs to the GRF data. We followed these steps for each data collection:
 
 #### 1. Sync IMUs to each other
-1. Start IMU data collection on iPad application
+1. Start IMU data collection
 1. Place all IMUs on swivel desk chair in identical orientation. *If you don't have a swivel desk chair, hold all IMUs in
 your hand.*
 1. Wait 5 seconds to provide a "quiet" period of data collection
@@ -47,7 +58,7 @@ and stand still for another 5 seconds
 1. Wait 5 seconds to provide a "quiet" period of data collection.
 1. Swivel chair back and forth 3-5 times while pressing down on IMUs to ensure they all rotate together on the chair
 1. Wait 5 seconds to provide a "quiet" period of data collection
-1. End IMU data collection on iPad application
+1. End IMU data collection
 
 Later on, we'll use the IMU's angular velocity during the swivels to synchronize IMUs to each other and used the IMU's
 vertical linear acceleration during the countermovement jump to synchronize IMUs to the GRF data. Synchronizing the IMUs
@@ -79,14 +90,18 @@ Following data collection and data download from IMUs, organize your IMU and GRF
            - Sacrum_2020_10_26.csv
        - GRF_data.csv
 ```
-The `Baseline_Processing.m` script isn't very smart. It may get mixed up if there are additional files located in the
-directory structure above. Our study was longitudinal, so there were multiple collections for each subject ID. 
+The `Baseline_Processing.m` script isn't very smart. It may get mixed up if there are additional CSV/ANC/FORCE files 
+located in the directory structure above. Our study was longitudinal, so there were multiple collections for each 
+subject ID. 
 
 ## 3. Running `Baseline_Preprocessing.m`
 Combines IMU csv files and GRF ASCII file into single MATLAB structure. Likely requires modification based on your
 lab's motion capture software and force-measuring equipment. Inspect `Preprocessing/support_fxns/import_baseline_data.m`
 and `Preprocessing/support_fxns/importforces.m` for examples on how to import GRF data that is in different formats. 
 
-## 4. Synchronizing IMU and GRF data
-InSink is the answer
-    
+[Baseline Preprocessing README]('/Preprocessing/README.md')
+
+## 4. InSink Application
+InSink is a standalone MATLAB-based application for Windows that temporally synchronizes IMU and GRF data. 
+
+InSink README goes here
