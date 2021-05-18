@@ -5,8 +5,8 @@
 # InSink
 Just like Justin, JC, Chris, Joey, and Lance's dance moves, we want our IMU and GRF signals to be "NSYNC". :sweat_smile:
 The InSink App temporally syncs multiple IMU sensors to each other and then syncs them to a vGRF signal. It syncs signals
-via the cross-correlation of a given signal interval in the frequency domain. InSink was made by Ryan Alcantara using 
-MATLAB App Designer (2019a).
+via the cross-correlation of a given signal interval in the frequency domain. InSink was made by [Ryan Alcantara](https://twitter.com/Ryan_Alcantara_)
+using MATLAB App Designer (2019a).
 
 # How do I install the InSink App?
 The InSink App has been compiled to run as its own standalone application, so you don't need MATLAB open or installed to

@@ -2,11 +2,9 @@
 This repository contains materials for the use of IMeasureU inertial measurement units in biomechanics research. 
 These materials were developed as a part of a research study funded by the PAC-12 Student Health and Well-being Grant 
 Program and a collaboration between the University of Colorado, University of Oregon, Stanford University, and University
-of Southern California. 
-
-This repository contains code and materials generated during this collaboration and is maintained by [Ryan Alcantara](https://twitter.com/Ryan_Alcantara_). 
-Please open an issue if you have a particular inquiry or need help adapting this approach for your study. The following
-publications have implemented components of this toolbox:
+of Southern California. This repository contains code and materials generated during this collaboration and is maintained by 
+[Ryan Alcantara](https://twitter.com/Ryan_Alcantara_). Please open an issue if you have a particular inquiry or need help 
+adapting this approach for your study. The following publications have implemented components of this toolbox:
 
 - ["Sacral acceleration can predict whole-body kinetics and stride kinematics across running speeds"](https://peerj.com/articles/11199/)
  by Alcantara et al. (2021)
@@ -102,6 +100,10 @@ and ask for help!
 
 ## 4. Synchronizing IMU and GRF data
 We developed a standalone MATLAB-based Windows application that temporally synchronizes IMU and GRF data: InSink. 
-View `Sync_IMU_GRF/README.md` for more information on how to use the application. If you run into bugs, open an issue! 
+View [`Sync_IMU_GRF/README.md`](Sync_IMU_GRF) for more information on how to use the application. If you run into bugs, open an issue! 
 
-
+## 5. Analyze IMU and GRF data
+Now that your IMU and GRF are synchronized, there are so many things you can do! If you're looking for a function that can
+quickly identify stance or aerial phase during running, check out the `split_steps()` function in the [Python](https://www.ryan-alcantara.com/dryft/signal.html#dryft.signal.splitsteps)
+or [Matlab](https://github.com/alcantarar/dryft/tree/master/MATLAB) versions of [dryft](https://joss.theoj.org/papers/10.21105/joss.01910), an open 
+source library designed to help process GRF data from force-measuring treadmills. 
