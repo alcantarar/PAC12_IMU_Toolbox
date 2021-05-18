@@ -88,7 +88,7 @@ Following data collection and data download from IMUs, organize your IMU and GRF
            - Sacrum_2020_10_26.csv
        - GRF_data.csv
 ```
-The [`Baseline_Processing.m`](Preprocessing/Baseline_Processing.m) script isn't very flexible. It will get mixed up if there are additional CSV/ANC/FORCE files 
+The [`Baseline_Processing.m`](Preprocessing/Baseline_Preprocessing.m) script isn't very flexible. It will get mixed up if there are additional CSV/ANC/FORCE files 
 located in the directory structure above. Our study was longitudinal, so there were multiple collections for each 
 subject ID. 
 

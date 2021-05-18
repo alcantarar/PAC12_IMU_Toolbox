@@ -2,7 +2,7 @@
 *Created by Alex Denton at the [Bowerman Sports Science Clinic](https://bssc.uoregon.edu/),
 University of Oregon*
 
-3D object file: `Updated Sacral Clip.stl`
+3D object file: [`Updated Sacral Clip.stl`](Updated Sacral Clip.stl)
 
 Final specifications should be 80 x 60 x 6 mm, but we've printed it at 
 76 x 50 x 5.3 mm on our lab-made [RepRap](https://reprap.org/wiki/RepRap) 
