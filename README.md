@@ -1,12 +1,12 @@
 # PAC12_IMU_Toolbox
-Repository contains materials for use of IMeasureU inertial measurement units for biomechanics research. 
+This repository contains materials for the use of IMeasureU inertial measurement units in biomechanics research. 
 These materials were developed as a part of a research study funded by the PAC-12 Student Health and Well-being Grant 
 Program and a collaboration between the University of Colorado, University of Oregon, Stanford University, and University
 of Southern California. 
 
-This repository contains code and materials generated during this collaboration and is maintained by Ryan Alcantara. 
+This repository contains code and materials generated during this collaboration and is maintained by [Ryan Alcantara](https://twitter.com/Ryan_Alcantara_). 
 Please open an issue if you have a particular inquiry or need help adapting this approach for your study. The following
-publications have implemented aspects of this toolbox:
+publications have implemented components of this toolbox:
 
 - ["Sacral acceleration can predict whole-body kinetics and stride kinematics across running speeds"](https://peerj.com/articles/11199/)
  by Alcantara et al. (2021)
@@ -24,7 +24,7 @@ the specifications. We developed a custom 3D-printed clip to adhere an IMU to th
 Information about the IMU clip can be found in `Sacral_IMU_Clip/`. 
 
 ### IMU Collection Mode
-We collected accelerometer, gyroscope, and magnetometer at 1000 Hz for all data collections. This was accomplished via
+We collected accelerometer, gyroscope, and magnetometer at 500 Hz for all data collections. This was accomplished via
 the "on board" collection mode, not the "streaming" mode.
 
 ### Temporal Synchronization
@@ -90,18 +90,18 @@ Following data collection and data download from IMUs, organize your IMU and GRF
            - Sacrum_2020_10_26.csv
        - GRF_data.csv
 ```
-The `Baseline_Processing.m` script isn't very smart. It may get mixed up if there are additional CSV/ANC/FORCE files 
+The `Baseline_Processing.m` script isn't very flexible. It will get mixed up if there are additional CSV/ANC/FORCE files 
 located in the directory structure above. Our study was longitudinal, so there were multiple collections for each 
 subject ID. 
 
 ## 3. Processing IMU and GRF data
-Next, we aim to combine IMU csv files and GRF ASCII file into single MATLAB structure. The scripts we used likely require
+Next, we will combine IMU csv files and the GRF ASCII file into single MATLAB structure. The scripts we used likely require
 modification based on your lab's motion capture software and force-measuring equipment. View `Preprocessing/README.md` 
 for information about the script to run and how to modify it for your particular use case. If you get stuck, open an issue
 and ask for help!
 
 ## 4. Synchronizing IMU and GRF data
-We developed a standalone MATLAB-based application for Windows that temporally synchronizes IMU and GRF data: InSink. 
-View `InSink/README.md` for more information on how to use the application. If you run into bugs, open an issue! 
+We developed a standalone MATLAB-based Windows application that temporally synchronizes IMU and GRF data: InSink. 
+View `Sync_IMU_GRF/README.md` for more information on how to use the application. If you run into bugs, open an issue! 
 
 
