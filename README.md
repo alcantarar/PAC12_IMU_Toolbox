@@ -100,7 +100,7 @@ and ask for help!
 
 ## 4. Synchronizing IMU and GRF data
 We developed a standalone MATLAB-based Windows application that temporally synchronizes IMU and GRF data: InSink. 
-View [`Sync_IMU_GRF/README.md`](Sync_IMU_GRF) for more information on how to use the application. If you run into bugs, open an issue! 
+View [`Synchronization/README.md`](Synchronization) for more information on how to use the application. If you run into bugs, open an issue! 
 
 ## 5. Analyze IMU and GRF data
 Now that your IMU and GRF are synchronized, there are so many things you can do! If you're looking for a function that can

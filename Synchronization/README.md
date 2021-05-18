@@ -13,7 +13,7 @@ The InSink App has been compiled to run as its own standalone application, so yo
 run InSink. 
 ## Windows Installation: 
 1. Clone/Download the repository to your computer by navigating [here](https://github.com/alcantarar/PAC12_IMU_Toolbox) and clicking the green "Clone or Download" button.
-2. Unzip the file, navigate to the `Sync_IMU_GRF/APP/InSink/for_redistribution` folder and run the installer: `MyAppInstaller_web.exe`. 
+2. Unzip the file, navigate to the `Synchronization/APP/InSink/for_redistribution` folder and run the installer: `MyAppInstaller_web.exe`. 
 3. Follow the instructions for the installer. This can take a few minutes if MATLAB Runtime isn't already installed.
 4. InSink will be installed in the location you selected in the installer. Press the Windows key and type 'InSink' to locate it.
 

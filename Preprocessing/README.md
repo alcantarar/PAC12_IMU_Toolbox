@@ -6,8 +6,8 @@ at multiple universities.
 Each university had a preferred method of exporting GRF data from their motion capture software, and this script
 handles these differences. For example, Colorado uses Vicon Nexus and a Treadmetrix treadmill that exports GRF data
 as a *.CSV file while Oregon uses Motion Analysis Cortex and a Bertec treadmill that exports GRF data as an *.ANC file.
-Inspect `support_fxns/import_baseline_data.m` and `support_fxns/importforces.m` for information on how we handled importing
-GRF data from different sources. Your particular use case may require modification of these functions. 
+Inspect [`support_fxns/import_baseline_data.m` and `support_fxns/importforces.m`](support_fxns) for information on how 
+we handled importing GRF data from different sources. Your particular use case may require modification of these functions. 
 
 Each data collection session will have one Matlab variable (structure) called `data` with the following contents:
 - `colDate` (double; format: YYMMDD; date of data collection)
