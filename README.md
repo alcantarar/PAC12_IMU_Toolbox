@@ -17,9 +17,9 @@ reaction forces and contact time during treadmill running"](https://doi.org/10.1
 ### Sensor Location
 We used 3 IMUs to collect data on the lower legs and sacrum. IMeasureU provides velcro straps to adhere their device just
 above the ankle. IMUs on the left/right shank were located laterally on the lower leg with the device's +y axis oriented
-proximally and the +z axis oriented medially. Refer to `IMU_Blue_Thunder_Specifications.pdf` for more information about
-the specifications. We developed a custom 3D-printed clip to adhere an IMU to the waistband of running shorts. 
-Information about the IMU clip can be found in `Sacral_IMU_Clip/`. 
+proximally and the +z axis oriented medially. Refer to [`IMU_Blue_Thunder_Specifications.pdf`](IMU_Blue_Thunder_Specifications.pdf)
+for more information about the specifications. We developed a custom 3D-printed clip to adhere an IMU to the waistband of
+running shorts. Information about the IMU clip can be found in [`Sacral_IMU_Clip/`](Sacral_IMU_Clip). 
 
 ### IMU Collection Mode
 We collected accelerometer, gyroscope, and magnetometer at 500 Hz for all data collections. This was accomplished via
@@ -73,7 +73,7 @@ filename. The scripts in this repository expect slight variations of the followi
 - `Sacrum_2020_10_26.csv`
 
 For a list of the acceptable variations for IMU file naming or if you aim to implement additional or different 
-IMU locations, start by inspecting `Preprocessing/support_fxns/importIMUs.m`.
+IMU locations, start by inspecting [`Preprocessing/support_fxns/importIMUs.m`](Preprocessing/support_fxns/importIMUs.m).
 
 ## 2. Organizing IMU and GRF files
 Following data collection and data download from IMUs, organize your IMU and GRF data in the following way:
@@ -88,13 +88,13 @@ Following data collection and data download from IMUs, organize your IMU and GRF
            - Sacrum_2020_10_26.csv
        - GRF_data.csv
 ```
-The `Baseline_Processing.m` script isn't very flexible. It will get mixed up if there are additional CSV/ANC/FORCE files 
+The [`Baseline_Processing.m`](Preprocessing/Baseline_Processing.m) script isn't very flexible. It will get mixed up if there are additional CSV/ANC/FORCE files 
 located in the directory structure above. Our study was longitudinal, so there were multiple collections for each 
 subject ID. 
 
 ## 3. Processing IMU and GRF data
 Next, we will combine IMU csv files and the GRF ASCII file into single MATLAB structure. The scripts we used likely require
-modification based on your lab's motion capture software and force-measuring equipment. View `Preprocessing/README.md` 
+modification based on your lab's motion capture software and force-measuring equipment. View [`Preprocessing/README.md`](Preprocessing) 
 for information about the script to run and how to modify it for your particular use case. If you get stuck, open an issue
 and ask for help!
 
